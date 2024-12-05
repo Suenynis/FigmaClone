@@ -100,8 +100,8 @@ The project will be released under the MIT License, ensuring it's open and acces
 ## 📧 Stay Updated
 
 Follow the project’s progress on:
-- **GitHub Issues**: [Planned Issue Tracker](#)
-- **Social Media**: [Twitter](#), [LinkedIn](#)
+- **GitHub Issues**: [Planned Issue Tracker](https://github.com/Suenynis/FigmaClone/issues)
+- **Social Media**: [Telegram](https://t.me/innovatorrrr), [LinkedIn](https://www.linkedin.com/in/suienish-mirambekov-b7bb05222/)
 
 ---
 
