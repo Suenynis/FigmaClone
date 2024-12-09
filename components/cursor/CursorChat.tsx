@@ -10,7 +10,7 @@ const CursorChat = ({cursor, cursorState, setCursorState, updateMyPresence} : Cu
       updateMyPresence({ message: e.target.value});
       setCursorState({
         mode: CursorMode.Chat,
-        previousMessage: null,
+        previousMessage: '',
         message: e.target.value
       })
     }

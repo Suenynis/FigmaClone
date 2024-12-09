@@ -11,7 +11,7 @@ const Live = () => {
     const [cursorState, setCursorState] = useState(
         {
             mode: CursorMode.Hidden,
-        }
+        } 
     )
 
     const handlePointerMove = useCallback((event: React.PointerEvent) => 
@@ -45,7 +45,7 @@ const Live = () => {
                 previousMessage: null,
                 message: '',
               })    
-            } else if (e.key === 'Enter'){
+            } else if (e.key === 'Escape'){
                 updateMyPresence({ message: '' })
                 setCursorState({ mode: CursorMode.Hidden })
             }
@@ -79,7 +79,7 @@ const Live = () => {
             <CursorChat 
             cursor = {cursor}
             cursorState = {cursorState}
-            setcursorState = {setCursorState}
+            setCursorState = {setCursorState}
             updateMyPresence = {updateMyPresence}
             
             />
