@@ -43,7 +43,8 @@ const CursorChat = ({cursor, cursorState, setCursorState, updateMyPresence} : Cu
                           text-sm 
                           leading-relaxed
                         text-white 
-                          rounded-[20px]'>
+                          rounded-[20px]'
+                          onKeyUp={(e => e.stopPropagation())}>
             {cursorState.previousMessage && (
               <div>{cursorState.previousMessage}</div>
               )}

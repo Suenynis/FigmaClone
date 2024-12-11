@@ -61,7 +61,7 @@ const Live = () => {
         {
             event.preventDefault();
 
-            if(cursor === null || cursor.mode !== CursorMode.ReactionSelector){
+            if(cursor === null || cursorState.mode !== CursorMode.ReactionSelector){
 
             const x = event.clientX - event.currentTarget.getBoundingClientRect().x;
             const y = event.clientY - event.currentTarget.getBoundingClientRect().y;
