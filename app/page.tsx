@@ -6,13 +6,9 @@ import RightSidebar from "@/components/RightSidebar";
 
 export default function Page() {
   return (
-      <main className="h-screen overflow-hidden">
-        <Navbar/>
-        <section className="flex h-full flex-row">
-          <LeftSidebar/>
-            < Live />
-          <RightSidebar/>
-      </section>
-      </main>
+      <div>
+
+      <Live />
+      </div>
   );
 }
