@@ -1,4 +1,4 @@
-import { fabric } from "fabric";
+import * as fabric from "fabric";
 import { v4 as uuid4 } from "uuid";
 
 import {
@@ -22,16 +22,16 @@ export const initializeFabric = ({
   fabricRef: React.MutableRefObject<fabric.Canvas | null>;
   canvasRef: React.MutableRefObject<HTMLCanvasElement | null>;
 }) => {
-  // get canvas element
-  const canvasElement = document.getElementById("canvas");
+  if (!canvasRef.current) {
+    console.error("Canvas ref is not attached to any DOM element.");
+    return null;
+  }
 
-  // create fabric canvas
   const canvas = new fabric.Canvas(canvasRef.current, {
-    width: canvasElement?.clientWidth,
-    height: canvasElement?.clientHeight,
+    width: canvasRef.current.clientWidth,
+    height: canvasRef.current.clientHeight,
   });
 
-  // set canvas reference to fabricRef so we can use it later anywhere outside canvas listener
   fabricRef.current = canvas;
 
   return canvas;
